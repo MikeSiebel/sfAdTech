@@ -9,6 +9,30 @@
 
 // Added Mike styles
 #app > nav > div > a {
-    color: rgba(60, 240, 5, 0.322); 
+    color: #09b05f; 
     font-weight: 600;   
 }
+
+#app > main > div > div {
+    color: #dc3545;
+    }
+    #app > main > div > div > div > div{
+    border-color: #fff;
+    }
+    #navbarSupportedContent > ul.navbar-nav.me-auto > li > a {
+    color: #dc3545;
+    }
+  
+    //
+    #navbarDropdown {
+        color: #dc3545;
+    }
+
+    #app > main > div > div > div > div > div.card-body > div > p.text-center > a{
+        color: #dc3545;
+        border-color: #dc3545;
+    }
+
+    #app > main > div > div > div > div > div.card-body > div > p{
+        text-align: justify;
+    }

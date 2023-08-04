@@ -51,7 +51,6 @@
                                 @endforeach
                             </tbody>
                         </table>
-                        <!--<a href="javascript:go1(3)">Ссылка на оффер без подписки</a>-->
                         <a href="javascript:go(3)">Ссылка на оффер без подписки</a>
                     </div>
 

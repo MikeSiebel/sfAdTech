@@ -15,6 +15,7 @@ use App\Http\Controllers\RedirController;
 */
 
 // ad link request for $id subscription 
+// запрос рекламной ссылки для $id подписки
 Route::middleware('auth:sanctum')->get('/go/{id}',  [RedirController::class, 'go'])->name('go');
 
 // confirmation of clicking on an advertising link for $id subscription

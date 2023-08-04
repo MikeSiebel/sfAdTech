@@ -49,7 +49,7 @@ class RedirController extends Controller
         return $offer_url;
     }
     // Сохранение информации о запросе рекламной ссылки
-    public function create(Subscribe $subscribe)
+   /* public function create(Subscribe $subscribe)
     {
         $redir = new Redir();
         $redir->offer_id = $subscribe->offer->id;
@@ -63,6 +63,25 @@ class RedirController extends Controller
             return route('redirerr');
         }
     }
+    */
+    /**/
+    public function create(Subscribe $subscribe)
+{
+    $redir = new Redir();
+    $redir->offer_id = $subscribe->offer->id;
+    $redir->webmaster_id = Auth::user()->id;
+    $redir->accept = $redir->webmaster_id == $subscribe->webmaster->id;
+    $redir->save();
+
+    $this->success(request(), $redir->id);
+
+    if ($redir->accept) {
+        return $subscribe->offer->url.'?rd='.$redir->id;
+    } else {
+        return route('redirerr');
+    }
+}
+    
     // Подтверждение перехода по рекламной ссылке
     public function success(Request $request, $id)
     {

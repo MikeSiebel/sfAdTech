@@ -11,6 +11,7 @@
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <!--<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">-->
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
@@ -24,12 +25,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav me-auto">
-                        <li class="nav-item"><a class="nav-link" href="{{ route('offers.index') }}">Предложения</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('offers.index') }}">Варианты предложений</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('subscribes.index') }}">Подписки</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ route('reports') }}">Отчеты</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('reports') }}">Аналитическая информация</a></li>
                         {{-- <li class="nav-item"><a class="nav-link" href="{{ route('events.index') }}">События</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ route('contracts.index') }}">Договоры</a></li> --}}
-                        <li class="nav-item"><a class="nav-link" href="{{ route('users.index') }}">Пользователи</a></li>
+                        <li class="nav-item"><a class="nav-link" href="{{ route('users.index') }}">Клиентская база</a></li>
                     </ul>
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ms-auto">
