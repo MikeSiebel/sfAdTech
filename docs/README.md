@@ -21,26 +21,23 @@ Developed as a practical task in the "PHP Developer" course.
 ``` bash
 - git clone https://github.com/MikeSiebel/sfadtech.git
 ```
+
 2. Update the dependencies:
 ``` bash
 - composer update
-- npm install
 ```
-3. Assemble the frontend:
-``` bash
-- npm run prod
-```
-4. Generate a new app key using php artisan (ensure the 'APP_KEY' parameter in .env is cleared first):
+
+3. Generate a new app key using php artisan (ensure the 'APP_KEY' parameter in .env is cleared first):
 ``` bash
 - php artisan key:generate
 ```
-5. Create a database for the site.
+4. Create a database for the site.
 
-6. Duplicate the .env.example file and rename it as .env. In the .env file, specify the database connection parameters.
+5. Duplicate the .env.example file and rename it as .env. In the .env file, specify the database connection parameters.
 
-7. Modify the passwords for users in /database/seeders/UserSeeder.php.
+6. Modify the passwords for users in /database/seeders/UserSeeder.php.
 
-8. Perform database migrations and seeding using the following command:
+7. Perform database migrations and seeding using the following command:
 ``` bash
 - php artisan migrate --seed
 ```

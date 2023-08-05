@@ -98,7 +98,5 @@
 
 /api/success/{id} - подтверждение перехода на страницу рекламодателя с указанным ID, который рекламодатель получает из параметра (?rd=<9999>) GET-запроса на своем сайте. Пример скрипта запроса приведен в коде файла redir-index.blade.php.
 
-<img src="Structure.png" alt="Структурная схема пректа">
-
 ***
 **2023@MikeSiebel** [sfadtech project - SF-AdTech](https://github.com/MikeSiebel/sfadtech.git)
