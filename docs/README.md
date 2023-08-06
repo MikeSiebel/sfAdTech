@@ -1,50 +1,29 @@
-# Traffic tracker of interaction between advertisers and website owners
-SkillFactory  PHP_DEV_31 Final project - SF-AdTech
+# Трафик-трекер взаимодействия рекламодателей и владельцев сайтов
 
-## Project description 
+SkillFactory  PHPDEV Final финальный проект - SF-AdTech
 
-**Advertising traffic tracker system**
+## Описание проекта 
 
-Traffic tracker created to organize the interaction of companies (advertisers) that want to attract visitors and buyers (clients), and site owners (webmasters) to their site
+**Система отслеживания рекламного трафика**
 
+Трекер трафика создан для организации взаимодействия компаний (рекламодателей), желающих привлечь посетителей и покупателей (клиентов), и владельцев сайтов (вебмастеров) на свой сайт. Здесь 
+[Подробное описание системы.](description.md)
 
-## Implementation:
+## Используемые технологии
 
-PHP version 7.4 + Laravel 8.75 + MySQL 8.0
+* PHP version 7.4
 
-Developed as a practical task in the "PHP Developer" course.
+* Laravel 8.75
 
+* MySQL 8.0
 
-## Instructions
+* node.js v18.16.0
 
-1. Download the project by running the command:
-``` bash
-- git clone https://github.com/MikeSiebel/sfadtech.git
-```
+* npm 9.8.0
 
-2. Update the dependencies:
-``` bash
-- composer update
-```
+## 
 
-3. Generate a new app key using php artisan (ensure the 'APP_KEY' parameter in .env is cleared first):
-``` bash
-- php artisan key:generate
-```
-4. Create a database for the site.
-
-5. Duplicate the .env.example file and rename it as .env. In the .env file, specify the database connection parameters.
-
-6. Modify the passwords for users in /database/seeders/UserSeeder.php.
-
-7. Perform database migrations and seeding using the following command:
-``` bash
-- php artisan migrate --seed
-```
-
-## Documentation 
-
-[Custom system description (rus)](description.md)
+<img src="Structure.png" alt="Структурная схема пректа">
 
 ***
 **2023@MikeSiebel** [sfadtech project - SF-AdTech](https://github.com/MikeSiebel/sfadtech.git)

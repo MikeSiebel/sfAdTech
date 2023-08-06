@@ -98,5 +98,48 @@
 
 /api/success/{id} - подтверждение перехода на страницу рекламодателя с указанным ID, который рекламодатель получает из параметра (?rd=<9999>) GET-запроса на своем сайте. Пример скрипта запроса приведен в коде файла redir-index.blade.php.
 
+<img src="Structure.png" alt="Структурная схема пректа">
+
+## Используемые технологии:
+* PHP version 7.4
+
+* Laravel 8.75
+
+* MySQL 8.0
+
+* node.js v18.16.0
+
+* npm 9.8.0
+
+## Инструкции по установке
+
+1. Загрузите проект, выполнив команду:
+``` bash
+- git clone https://github.com/MikeSiebel/sfadtech.git
+```
+2. Обновите зависимости:
+``` bash
+- composer update
+- npm install
+```
+3. Собираем фронтенд:
+``` bash
+- npm run prod
+```
+4. Создайте новый ключ приложения с помощью php artisan (сначала убедитесь, что параметр APP_KEY в .env очищен):
+``` bash
+- php artisan key:generate
+```
+5. Создайте базу данных для сайта.
+
+6. Дублируйте файл .env.example и переименуйте его в .env. В файле .env укажите параметры подключения к базе данных.
+
+7. Измените пароли для пользователей в ``/database/seeders/UserSeeder.php.``
+
+8. Выполните миграцию базы данных и заполнение с помощью следующей команды:
+``` bash
+- php artisan migrate --seed
+```
+
 ***
 **2023@MikeSiebel** [sfadtech project - SF-AdTech](https://github.com/MikeSiebel/sfadtech.git)
